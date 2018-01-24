@@ -9,9 +9,13 @@ public class Main {
         //Take in input
         Scanner scan = new Scanner(System.in);
         int input = scan.nextInt();
+        
+        if(input < 1) System.out.println("Invalid Input: Input must be greater than 0");
 
         //Generate and print out sequence
-        FizzBuzzSequence fizzBuzz = new FizzBuzzSequence(input);
-        System.out.println(fizzBuzz);
+        else{
+            FizzBuzzSequence fizzBuzz = new FizzBuzzSequence(input);
+            System.out.println(fizzBuzz);
+        }
     }
 }
